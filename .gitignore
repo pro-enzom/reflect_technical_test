@@ -1,0 +1,11 @@
+# ignore OSX file
+.DS_Store
+
+# ignore .git folder
+.git/
+
+# ignore venv
+env/
+
+# ignore .ven file (config file)
+.env
