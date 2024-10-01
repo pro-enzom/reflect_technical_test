@@ -9,3 +9,6 @@ env/
 
 # ignore .ven file (config file)
 .env
+
+# ignore json files
+*.json
