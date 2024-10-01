@@ -13,11 +13,6 @@ source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
-Finally, you can run the main:
-```
-python3 main.py
-```
-
 # Usage
 Our aim here is to export data from **users**, **departments** and **contracts**.
 \
@@ -28,3 +23,8 @@ But to make the code maintainable and reusable, we defined several functions and
 \
 \
 This way, you can easily adapt the class to your needs.
+\
+Finally, you can run the main:
+```
+python3 main.py
+```
