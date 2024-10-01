@@ -1,28 +1,25 @@
-# Solutions Engineer - Coding Challenge
+# Installation
 
-## Consignes
+First you need to create a `.env` file:
+```
+API_URL=[url]
+API_TOKEN=[token]
+````
 
-- Collecter les données de l'API Lucca :
-	- salariés (**users**) : 
-		- Ceux actuellement en poste, ceux qui l'ont quittés et ceux qui vont la rejoindre
-		- Choix libre des informations pertinentes
-	- contrats (**?**) : 
-		- Type de contrat
-		- Date de début et fin (s'il n'est plus en poste)
-		- Titre du poste
-		- Département
-		- Choix libre des informations pertinentes
-	- départements (**departments**) :
-		- Reconstruire la hiérarchie des départements
-		- Choix libre des informations pertinentes
-- Stocker les données en local
-	- Choix libre du format (CSV, JSON, BDD, ...)
+Then you must create a virtual environment and install `requirements.txt`:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
 
-## Contraintes et critères
-
-- Choix architecture libre cependant :
-	- Récupération des données dans un temps raisonnable (dizaines de minutes)
-		- _Suivre le temps d'exécution du job_
-		- _Limite des calls API : 60 requêtes par seconde_
-		- _Limite de données dans l'objet retourné ?_
-		
+# Usage
+Our aim here is to export data from **users**, **departments** and **contracts**.
+\
+\
+To do this, we created a LuccaAPI class which will load and export the data from these three entities by default. 
+\
+But to make the code maintainable and reusable, we defined several functions and called them in our main.
+\
+\
+This way, you can easily adapt the class to your needs.
